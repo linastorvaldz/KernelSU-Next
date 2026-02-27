@@ -9,8 +9,8 @@ config KSU
 
 config KSU_EXTRAS
 	bool "Enable custom stuff"
-	depends on KSU
-	default n
+	depends on KSU && AUDIT
+	default y
 	help
 	  Custom extensions. Experimental.
 	  Currently, only avc log spoofing is implemented.
